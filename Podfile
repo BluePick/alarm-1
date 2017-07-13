@@ -1,9 +1,16 @@
-platform :ios, '8.0'
+platform :ios, '10.3'
+use_frameworks!
 
 target 'alarm' do
+  inherit! :search_paths
   pod 'EDSunriseSet', '~> 1.0'
   pod 'MagicalRecord', '~> 2.2'
+  pod 'Quick'
+  pod 'Nimble'
 end
 
 target 'alarmTests' do
+  inherit! :search_paths
+  pod 'Quick'
+  pod 'Nimble'
 end
